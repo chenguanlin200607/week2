@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="box">
+<view>
+<image src="/img/1f30e924b899a901c2b217720a950a7b0308f5eb.jpg" class="t1"/>
+</view>
+<view class="title">
+【体育】尤文3-0巴萨
+</view>
+<view class="text">
+  欧冠：巴萨vs尤文 . 梅C再战，“欧冠之王” 遇强则强，遇梅泽凉 本周三凌晨4:00，欧冠小组赛G组将迎来一场激战，由巴萨主场迎战尤文，本组双方均已提前出线，这一战将决定谁是小组第一的关键之战。 巴塞罗那—巴塞罗那...
+</view>
+<view class="num">
+  收藏数：1
+  <image catchtap="handleCollection" wx:for="{{!isCollected}}" src="/img/1f30e924b899a901c2b217720a950a7b0308f5eb.jpg" />
+  <image catchtap="handleCollection" wx:for="{{!isCollected}}" src="/img/1f30e924b899a901c2b217720a950a7b0308f5eb.jpg" />
+  <view wx:if="{{condition}}">true</view>
+</view>
+<view class="but">
+<button size="mini" type="default">收藏</button>
+</view>
+</view>
+<image class="save " src="{{isClick?'../../youzan-image/save-s.png':'../../youzan-image/save.png'}}" bindtap="haveSave"></image>
+   <text class="saveText">{{isClick?'已收藏':'收藏'}}</text>
+</view>
